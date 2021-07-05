@@ -1,6 +1,6 @@
 # bad approach
 # O(n^2) time / O(1) space
-# def twoNumberSum(array, targetSum):
+# def two_numbers_sum(array, targetSum):
 #     for i in range(len(array) - 1):
 #         first_number = array[i]
 #         for j in range(i + 1, len(array)):
@@ -12,7 +12,7 @@
 
 
 # O(n) time / O(n) space
-# def twoNumberSum(array, targetSum):
+# def two_numbers_sum(array, targetSum):
 #     nums = {}
 #     for i in array:
 #         potentialMatch = targetSum - i
@@ -24,7 +24,7 @@
 
 
 # O(n log(n)) time / O(1) space
-def twoNumberSum(array, targetSum):
+def two_numbers_sum(array, targetSum):
     array.sort()
     left = 0
     right = len(array) - 1
@@ -39,4 +39,4 @@ def twoNumberSum(array, targetSum):
             left += 1
     return ()
 
-print(twoNumberSum([2,4,-3,5,7,10], 2))
+print(two_numbers_sum([2,4,-3,5,7,10], 2))
